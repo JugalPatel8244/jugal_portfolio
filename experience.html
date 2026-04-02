@@ -164,6 +164,7 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            text-decoration: none;
         }
 
         .logo:hover {
@@ -185,14 +186,9 @@
             flex-shrink: 0;
         }
 
-        .logo .icon-svg {
-            width: 28px;
-            height: 28px;
-        }
-
         .nav-contact .icon-svg {
-            width: 28px;
-            height: 28px;
+            width: 15px;
+            height: 15px;
         }
 
         .contact-item .icon-svg {
@@ -284,10 +280,26 @@
 
         .experience-item {
             margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid rgba(107, 142, 107, 0.2);
         }
 
         .experience-item:last-child {
             margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+
+        .experience-left {
+            flex: 1;
         }
 
         .job-title {
@@ -302,14 +314,14 @@
             font-size: 1.2rem;
             font-weight: 500;
             color: var(--sage);
-            margin-bottom: 0.5rem;
         }
 
         .job-dates {
             font-size: 1rem;
             color: var(--earth-medium);
             font-style: italic;
-            margin-bottom: 1rem;
+            text-align: right;
+            white-space: nowrap;
         }
 
         .content-section ul {
@@ -369,6 +381,15 @@
             .content-section {
                 padding: 2rem 1.5rem;
             }
+
+            .experience-header {
+                flex-direction: column;
+            }
+
+            .job-dates {
+                text-align: left;
+                margin-top: 0.3rem;
+            }
         }
     </style>
 </head>
@@ -384,16 +405,12 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-content">
-            <a href="index.html" class="logo">
-                <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-                </svg>
+            <a href="jugal-patel-landing.html" class="logo">
+                <span class="material-symbols-outlined">home</span>
             </a>
             <div class="nav-contact">
                 <a href="mailto:jugalpatel@arizona.edu">
-                    <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                    </svg>
+                    <span class="material-symbols-outlined">mail</span>
                 </a>
                 <a href="https://www.linkedin.com/in/jugal-patel8244/" target="_blank">
                     <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
@@ -412,26 +429,50 @@
             
             <div class="content-section">
                 <div class="experience-item">
-                    <h3 class="job-title">Tree Propagation Intern</h3>
-                    <p class="company-name">Tucson Clean and Beautiful</p>
-                    <p class="job-dates">June 2025 – May 2026</p>
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <h3 class="job-title">Tree Propagation Intern</h3>
+                            <p class="company-name">Tucson Clean and Beautiful</p>
+                        </div>
+                        <p class="job-dates">June 2025 – May 2026</p>
+                    </div>
                     <ul>
-                        <li>Assisting with the propagation of 30+ (and counting) native trees from seeds and cuttings to support Tucson's urban forestry initiatives.</li>
-                        <li>Participating in school visits and community outreach, directly engaging with students to teach tree planting techniques and promote environmental stewardship.</li>
-                        <li>Performing routine plant care and maintenance, including watering, pruning, and weeding across multiple nursery sites.</li>
-                        <li>Supporting irrigation system maintenance and applying "Right Tree, Right Place" principles to enhance planting strategies and urban landscape compatibility.</li>
+                        <li>Cultivated 650+ native trees from seed and cuttings across three nursery sites, monitoring growth conditions and identifying early stage issues to maintain plant health</li>
+                        <li>Evaluated planting site conditions using Right Tree, Right Place principles, assessing soil, sunlight exposure, and water availability for optimal species selection</li>
+                        <li>Led tree planting workshops at five schools, educating students on horticultural practices and the role of urban forestry in heat mitigation and stormwater management</li>
+                        <li>Implemented Green Stormwater Infrastructure (GSI) strategies in field settings by assessing soil, drainage, and site conditions to support rain garden and urban forestry projects that enhance stormwater infiltration, reduce runoff, and improve community resilience</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
-                    <h3 class="job-title">Sustainable Agriculture Intern</h3>
-                    <p class="company-name">USDA - Natural Resources Conservation Service</p>
-                    <p class="job-dates">January 2025 – May 2025</p>
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <h3 class="job-title">Conference Assistant</h3>
+                            <p class="company-name">University of Arizona Housing & Residential Life</p>
+                        </div>
+                        <p class="job-dates">June 2025 – August 2025</p>
+                    </div>
                     <ul>
-                        <li>Assisted Plant Materials Center (PMC) staff in executing 3+ scientific studies, including data collection and analysis.</li>
-                        <li>Supported greenhouse and shade house operations by overseeing more than 8 planting cycles, applying precision fertilization techniques, implementing integrated pest management (IPM), and maintaining a 40-acre farm for optimal productivity.</li>
-                        <li>Conducted 52 seed harvesting and cleaning activities, ensuring adherence to quality standards, and prepared detailed documentation for strategic planning and conservation project reporting.</li>
-                        <li>Operated and maintained irrigation systems and farm machinery, reducing equipment downtime by 35 minutes weekly through efficient preventive maintenance practices and operational expertise.</li>
+                        <li>Coordinated front desk operations across multiple residential halls, coordinating guest check ins, check outs, and payment processing using StarRez</li>
+                        <li>Assisted as a primary point of contact for 7,800+ residents and guests, resolving concerns and delivering consistent customer service</li>
+                        <li>Oversaw key control systems including audits, lockout assistance, and access coordination across multiple buildings</li>
+                        <li>Collaborated with housekeeping and facilities teams to ensure timely room turnover and accurate reporting of maintenance issues</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-left">
+                            <h3 class="job-title">Sustainable Agriculture Intern</h3>
+                            <p class="company-name">USDA - Natural Resources Conservation Service</p>
+                        </div>
+                        <p class="job-dates">January 2025 – May 2025</p>
+                    </div>
+                    <ul>
+                        <li>Supported three ongoing research studies by collecting field data, recording observations, and maintaining structured datasets for analysis</li>
+                        <li>Directed greenhouse and shade house operations, overseeing 20+ planting cycles per week, fertilizer application, and integrated pest management practices</li>
+                        <li>Processed 400+ seed batches through harvesting, cleaning, and storage, producing detailed condition reports for conservation planning</li>
+                        <li>Reduced equipment downtime by approximately two hours per week by implementing a preventive maintenance schedule for irrigation systems and field machinery</li>
                     </ul>
                 </div>
             </div>
