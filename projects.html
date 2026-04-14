@@ -1,3 +1,6 @@
+Projects · HTML
+Copy
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,32 +23,32 @@
             align-items: center;
             justify-content: center;
         }
-
+ 
         .logo .material-symbols-outlined {
             font-size: 15px;
             width: 15px;
             height: 15px;
         }
-
+ 
         .nav-contact .material-symbols-outlined {
             font-size: 15px;
             width: 15px;
             height: 15px;
         }
-
+ 
         .contact-item .material-symbols-outlined {
             font-size: 15px;
             width: 15px;
             height: 15px;
             color: var(--sage);
         }
-
+ 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+ 
         :root {
             --earth-dark: #1a2e1a;
             --earth-medium: #2d4a2d;
@@ -56,7 +59,7 @@
             --terracotta: #c97a5f;
             --gold: #d4a574;
         }
-
+ 
         body {
             font-family: 'Work Sans', sans-serif;
             background: linear-gradient(135deg, #f4f1e8 0%, #e8dcc4 100%);
@@ -67,7 +70,7 @@
             display: flex;
             flex-direction: column;
         }
-
+ 
         /* Animated Background Elements */
         .bg-pattern {
             position: fixed;
@@ -79,7 +82,7 @@
             opacity: 0.4;
             pointer-events: none;
         }
-
+ 
         .leaf-shape {
             position: absolute;
             border-radius: 0 100% 0 100%;
@@ -87,7 +90,7 @@
             opacity: 0.15;
             animation: float 20s ease-in-out infinite;
         }
-
+ 
         .leaf-1 {
             width: 300px;
             height: 300px;
@@ -95,7 +98,7 @@
             left: -5%;
             animation-delay: 0s;
         }
-
+ 
         .leaf-2 {
             width: 200px;
             height: 200px;
@@ -103,7 +106,7 @@
             right: -3%;
             animation-delay: 5s;
         }
-
+ 
         .leaf-3 {
             width: 250px;
             height: 250px;
@@ -111,7 +114,7 @@
             left: 20%;
             animation-delay: 10s;
         }
-
+ 
         .leaf-4 {
             width: 180px;
             height: 180px;
@@ -119,7 +122,7 @@
             right: 15%;
             animation-delay: 7s;
         }
-
+ 
         @keyframes float {
             0%, 100% {
                 transform: translateY(0) rotate(0deg);
@@ -134,7 +137,7 @@
                 transform: translateY(-30px) rotate(3deg);
             }
         }
-
+ 
         /* Navigation */
         nav {
             background: rgba(244, 241, 232, 0.95);
@@ -146,7 +149,7 @@
             border-bottom: 3px solid var(--earth-medium);
             box-shadow: 0 4px 20px rgba(26, 46, 26, 0.1);
         }
-
+ 
         .nav-content {
             max-width: 1400px;
             margin: 0 auto;
@@ -155,7 +158,7 @@
             justify-content: space-between;
             align-items: center;
         }
-
+ 
         .logo {
             font-size: 2rem;
             color: var(--earth-dark);
@@ -166,16 +169,16 @@
             justify-content: center;
             text-decoration: none;
         }
-
+ 
         .logo:hover {
             color: var(--sage);
             transform: scale(1.1);
         }
-
+ 
         .logo-accent {
             color: var(--sage);
         }
-
+ 
         .icon-svg {
             width: 15px;
             height: 15px;
@@ -185,25 +188,25 @@
             display: inline-flex;
             flex-shrink: 0;
         }
-
+ 
         .nav-contact .icon-svg {
             width: 15px;
             height: 15px;
         }
-
+ 
         .contact-item .icon-svg {
             width: 15px;
             height: 15px;
             stroke: var(--sage);
             flex-shrink: 0;
         }
-
+ 
         .nav-contact {
             display: flex;
             gap: 2rem;
             align-items: center;
         }
-
+ 
         .nav-contact a {
             color: var(--earth-medium);
             text-decoration: none;
@@ -213,23 +216,23 @@
             align-items: center;
             justify-content: center;
         }
-
+ 
         .nav-contact a:hover {
             color: var(--sage);
             transform: scale(1.15);
         }
-
+ 
         /* Main Content */
         main {
             flex: 1;
             padding: 4rem 2rem;
         }
-
+ 
         .page-container {
             max-width: 1200px;
             margin: 0 auto;
         }
-
+ 
         .page-title {
             font-family: 'Crimson Pro', serif;
             font-size: clamp(2.5rem, 6vw, 4rem);
@@ -240,7 +243,7 @@
             opacity: 0;
             animation: fadeInUp 0.8s ease forwards;
         }
-
+ 
         .page-subtitle {
             font-size: 1.3rem;
             font-weight: 500;
@@ -251,7 +254,7 @@
             opacity: 0;
             animation: fadeInUp 0.8s ease 0.2s forwards;
         }
-
+ 
         .content-section {
             background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(10px);
@@ -262,7 +265,7 @@
             opacity: 0;
             animation: fadeInUp 0.8s ease 0.4s forwards;
         }
-
+ 
         .content-section h2 {
             font-family: 'Crimson Pro', serif;
             font-size: 2rem;
@@ -270,22 +273,22 @@
             color: var(--earth-dark);
             margin-bottom: 1.5rem;
         }
-
+ 
         .content-section p {
             font-size: 1.1rem;
             color: var(--earth-medium);
             line-height: 1.8;
             margin-bottom: 1rem;
         }
-
+ 
         .project-item {
             margin-bottom: 3rem;
         }
-
+ 
         .project-item:last-child {
             margin-bottom: 0;
         }
-
+ 
         .project-title {
             font-family: 'Crimson Pro', serif;
             font-size: 1.5rem;
@@ -293,7 +296,7 @@
             color: var(--earth-dark);
             margin-bottom: 1rem;
         }
-
+ 
         .section-header {
             font-family: 'Crimson Pro', serif;
             font-size: 2.2rem;
@@ -304,16 +307,16 @@
             padding-bottom: 1rem;
             border-bottom: 3px solid var(--sage);
         }
-
+ 
         .section-header:first-of-type {
             margin-top: 0;
         }
-
+ 
         .content-section ul {
             list-style: none;
             padding-left: 0;
         }
-
+ 
         .content-section ul li {
             font-size: 1.1rem;
             color: var(--earth-medium);
@@ -322,7 +325,7 @@
             padding-left: 1.5rem;
             position: relative;
         }
-
+ 
         .content-section ul li::before {
             content: "●";
             color: var(--sage);
@@ -330,7 +333,7 @@
             position: absolute;
             left: 0;
         }
-
+ 
         .project-link {
             display: inline-block;
             margin-top: 1rem;
@@ -343,13 +346,13 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(107, 142, 107, 0.3);
         }
-
+ 
         .project-link:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(107, 142, 107, 0.4);
             background: linear-gradient(135deg, var(--leaf), var(--sage));
         }
-
+ 
         /* Footer */
         footer {
             background: var(--earth-dark);
@@ -358,12 +361,12 @@
             text-align: center;
             margin-top: auto;
         }
-
+ 
         footer p {
             font-size: 0.9rem;
             color: var(--sand);
         }
-
+ 
         /* Animations */
         @keyframes fadeInUp {
             from {
@@ -375,13 +378,13 @@
                 transform: translateY(0);
             }
         }
-
+ 
         /* Responsive */
         @media (max-width: 768px) {
             .nav-contact {
                 display: none;
             }
-
+ 
             .content-section {
                 padding: 2rem 1.5rem;
             }
@@ -396,7 +399,7 @@
         <div class="leaf-shape leaf-3"></div>
         <div class="leaf-shape leaf-4"></div>
     </div>
-
+ 
     <!-- Navigation -->
     <nav>
         <div class="nav-content">
@@ -415,7 +418,7 @@
             </div>
         </div>
     </nav>
-
+ 
     <!-- Main Content -->
     <main>
         <div class="page-container">
@@ -430,29 +433,29 @@
                     <p>This project looks at how roads and buildings impact natural landscapes and wildlife movement across Pima County. By combining land cover data, infrastructure layers, and protected lands, I mapped areas with higher human disturbance and areas that remain more natural. The results show clear patterns where development reduces connectivity and highlights locations where better protection or wildlife crossings could help restore ecological movement.</p>
                     <a href="https://drive.google.com/file/d/1i3VTFT-EFqgjkuKf4kqehMu6db8BAgHj/view?usp=sharing" target="_blank" class="project-link">View Project</a>
                 </div>
-
+ 
                 <div class="project-item">
                     <h3 class="project-title">Hydrological and Terrain Differences in Saguaro National Park</h3>
                     <p>In this project, I compared the east and west sections of Saguaro National Park to understand how terrain affects water flow. Using elevation data, stream networks, and drainage basins, I found that the eastern side has more connected waterways while the western side is steeper and more rugged. This project shows how landscape shape influences hydrology and environmental patterns.</p>
                     <a href="https://drive.google.com/file/d/1-GWVq1uMjME9bQtj_WcGdTPdp1jBDVVJ/view?usp=sharing" target="_blank" class="project-link">View Project</a>
                 </div>
-
+ 
                 <div class="project-item">
                     <h3 class="project-title">The Distinct Smells of the University of Arizona Campus</h3>
                     <p>This project maps the everyday smells found across the University of Arizona campus, including food, trash, and nicotine products. Using field observations, I identified where these smells tend to cluster and how they relate to student activity and movement. The project explores how GIS can be used to map human experience and sensory perception in urban spaces.</p>
                     <a href="https://drive.google.com/file/d/1gWwavZ4n0VftcIgF66UPqOBZeTmDikp4/view?usp=sharing" target="_blank" class="project-link">View Project</a>
                 </div>
-
+ 
                 <h2 class="section-header">AutoCAD and SketchUp Projects</h2>
-
+ 
                 <div class="project-item">
                     <h3 class="project-title">Public Restroom Design for a Highway</h3>
                     <p>This project involved designing a functional and accessible public restroom facility for highway travelers. Using AutoCAD and SketchUp, I created detailed floor plans, elevations, and 3D models that prioritize user accessibility, efficient space utilization, and sustainable materials. The design incorporates ADA compliance standards, natural ventilation strategies, and durable finishes suitable for high-traffic public use.</p>
                     <a href="https://drive.google.com/file/d/1N3wtsrDB5wR5EbneDVcJzEsBlCWLxtFC/view?usp=sharing" target="_blank" class="project-link">View Project</a>
                 </div>
-
+ 
                 <h2 class="section-header">Excel Projects</h2>
-
+ 
                 <div class="project-item">
                     <h3 class="project-title">Sustainability Assessment Project</h3>
                     <ul>
@@ -460,7 +463,7 @@
                         <li>Proposed 10+ modernization improvements to enhance environmental impact, focusing on green materials and sustainable design strategies.</li>
                     </ul>
                 </div>
-
+ 
                 <div class="project-item">
                     <h3 class="project-title">Competitive Analysis of Pricing Data for Online Shoe Sales</h3>
                     <ul>
@@ -472,7 +475,7 @@
             </div>
         </div>
     </main>
-
+ 
     <!-- Footer -->
     <footer>
         <p>© 2026 Jugal Patel • University of Arizona • Sustainable Built Environments</p>
